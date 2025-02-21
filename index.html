@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      
+
+    <!-- favicon was not showing initially, after generating the icon image in favicon.io generator into .ico file it worked-->
+    <!-- found out that the favicon only need to written in the index.html page, no need to include in other sub pages in order to be shown on each page of the website -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" sizes="16x16 32x32" >
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="icon" type="image/png" sizes="6x6" href="favicon.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    
+    <title>Taiwan Go!</title>
+
+  </head>
+
+  <body>
+    <!-- style="background-image: url('imgs/night.jpg'); background-size: cover;" -->
+    <!-- write style directly in html is most specific, not generally recommended -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark py-3 fixed-top">
+      <div class="container-fluid">
+
+        <a href="index.html" class="navbar-brand p-0 text-warning " href="index.html">  <img src="imgs/boba.png" width="30px" height="40px" alt="taiwanLogo">
+          Taiwan Go</a>
+       
+        
+        
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="pages/food.html" class="nav-link text-warning"> Food </a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/attractions.html" class="nav-link text-warning"> Attractions </a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/kidsfamilyactivities.html" class="nav-link text-warning">  Kids&Families </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/shopping.html" class="nav-link text-warning">Shopping</a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/transportations.html" class="nav-link text-warning">  Transportations</a>
+            </li>
+            </ul>
+
+        </div>
+    </div>
+    </nav>
+
+
+
+
+
+<!--Carousel Wrapper-->
+ <!-- <div class="header-content">
+      <div class="header-content-inner">
+          <h1>A bunch of header text.</h1>
+      </div>
+    </div> -->
+
+<div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
+  <!--Indicators-->
+
+
+  <ol class="carousel-indicators">
+    <!-- bottom change to 40% -->
+
+    <!-- How to make this in the middle of the video? -->
+    <div class="text=align text-warning fw-bolder"><h1 class="script ">Formosa Taiwan</h1></div>
+
+    <li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
+    <li data-target="#video-carousel-example2" data-slide-to="1"></li>
+    <li data-target="#video-carousel-example2" data-slide-to="2"></li>
+    
+  </ol>
+
+ 
+
+
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div id="bottom" class="carousel-inner" role="listbox">
+    <!-- First slide -->
+    <div class="carousel-item active">
+      <!--Mask color-->
+      <div class="view">
+        <!--Video source-->
+        <video class="img-fluid" autoplay loop muted>
+          <source src="imgs/video1.mp4" type="video/mp4" />
+        </video>
+        <div class="mask rgba-indigo-light"></div>
+      </div>
+
+      <!--Caption-->
+      <div class="carousel-caption">
+        <div class="animated fadeInDown">
+          <p class="h3-responsive">The Cities</p>
+        </div>
+      </div>
+      <!--Caption-->
+    </div>
+    <!-- /.First slide -->
+
+    <!-- Second slide -->
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <!--Video source-->
+        <video class="img-fluid" autoplay loop muted>
+          <source src="imgs/video2.mp4" type="video/mp4" />
+        </video>
+        <div class="mask rgba-purple-slight"></div>
+      </div>
+
+      <!--Caption-->
+      <div class="carousel-caption">
+        <div class="animated fadeInDown">
+          <p class="h3-responsive">The Nature</p>
+        </div>
+      </div>
+      <!--Caption-->
+    </div>
+    <!-- /.Second slide -->
+
+    <!-- Third slide -->
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <!--Video source-->
+        <video class="img-fluid" autoplay loop muted>
+          <source src="imgs/video3.mp4" type="video/mp4" />
+        </video>
+        <div class="mask rgba-black-strong"></div>
+      </div>
+
+      <!--Caption-->
+      <div class="carousel-caption">
+        <div class="animated fadeInDown">
+          <p class="h3-responsive">The People</p>
+        </div>
+      </div>
+      <!--Caption-->
+    </div>
+    <!-- /.Third slide -->
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#video-carousel-example2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#video-carousel-example2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--Carousel Wrapper-->
+
+
+
+
+
+
+
+
+    <!-- Showcase -->
+ <section class="bg-black text-light mt-lg-0 pt-lg-5 pb-lg-5 p-5 m-0 text-center text-sm-start has-bg-img images" >
+        <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+           <div> 
+
+                <h2 class="fw-bolder">Most Comprehensive <span class="text-warning fw-bold">Tour </span> Guide of Taiwan</h2>
+                <p class="lead my-4 me-lg-5 fw-lighter">
+                  Taiwan covers an area of 36,191 km2. The main island, Taiwan, accounts for all
+but a tiny part of the country’s land area. It’s slightly bigger than the US state of
+Maryland and around half the size of Scotland. 
+                </p>
+                <button 
+                class="btn btn-dark btn-sm text-warning"
+                data-bs-toggle="modal" 
+                data-bs-target="#enroll"
+                >
+                Expore Your Trip! <i class="bi bi-arrow-right"></i>
+                </button>
+            </div> 
+            <img class="img-fluid d-block mb-lg-5 mt-lg-5 pt-lg-5;
+            " src="imgs/101-2.jpg" width="400" 
+            height="500" alt="101">
+        </div>
+ 
+    </div>
+</section>
+
+
+<!-- Boxes -->
+<section class="bg-dark pt-lg-5 pb-lg-5 p-5 ">
+ <div class="container pt-lg-5 pb-lg-5 p-5">
+    <div class="row text-center g-4 pt-lg-5 pb-lg-5 p-5">
+        <div class="col-md">
+            <div class="card bg-dark text-light border rounded-left border-lg border-warning">
+              <img class="card-img-top " src="imgs/mountain.jpg" alt="Card image cap" width="50px" height="200px">
+                <div class="card-body text-center">
+                    <div class="h1 mb-3">
+                    <i class="bi bi-buildings-fill"></i>
+                </div>
+                <h3 class="card-title mb-3">
+                    Attractions
+                </h3>
+                <p class="card-text">
+                  Taipei 101, 
+                  National Palace Museum, 
+                  Taroko Gorge, 
+                  Yushan National Park, 
+                  Alishan Scenic Mountain Area, 
+                  Sun Moon Lake, 
+                  ShianShan Mountain and more...
+                </p>
+                <a href="pages/attractions.html" class="btn btn-dark text-warning border rounded-left border-lg border-warning">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="col-md">
+                <div class="card bg-dark text-light border rounded-left border-lg border-warning">
+                  <img class="card-img-top" src="imgs/att-1.jpeg" alt="Card image cap" width="50px" height="200px">
+
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                        <i class="bi bi-shop"></i>
+                    </div>
+                    <h3 class="card-title mb-3">
+                        Shopping
+                    </h3>
+                    <p class="card-text">
+                      ATT 4 Fun, 
+                      Bellavita Shopping Mall, 
+                      Breeze Center Mall,
+                      Core Pacific City,
+                      Dihua Street,
+                      Eslite Spectrum Mall,
+                      Far Eastern SOGO, and more...
+                    </p>
+                    <a href="pages/shopping.html" class="btn btn-dark text-warning border rounded-left border-lg border-warning">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+    
+                </div>
+        </div>
+    </div>
+        <div class="col-md">
+            <div class="card bg-dark text-light border rounded-center border-lg border-warning">
+              <img class="card-img-top" src="imgs/mrt-3.jpeg" alt="Card image cap" width="50px" height="200px">
+
+                <div class="card-body text-center">
+                    <div class="h1 mb-3">
+                    <i class="bi bi-train-freight-front"></i>
+                </div>
+                <h3 class="card-title mb-3">
+                    Transportation
+                </h3>
+                <p class="card-text">
+                  Taiwan High-Speed Rail (HSR),
+                  Taiwan Railway,
+                  Charter Bus System,
+                  Mass Rapid Transit (MRT),
+                  City Bus,
+                  Public Bicycles,
+                  Taxi, and more...
+                </p>
+                <a href="/pages/transportations.html" class="btn btn-dark text-warning border rounded-right border-lg border-warning">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+
+            </div>
+
+
+
+ </div>
+
+</div>
+</div>
+</section>
+</section>
+
+
+<!-- Learn Sections -->
+<section id="learn" class="bg-black pt-lg-5 pb-lg-5 p-5 text-light">
+    <div class="container pt-lg-5 pb-lg-5 p-5">
+        <div class="row align-items-center justify-content-between pt-lg-5 pb-lg-5 p-5">
+            <div class="col-md">
+                <img src="imgs/beef.jpg" class="img-fluid" alt="beef" width="600px" height="100px">
+            </div>
+            <div class="col-md p-5">
+                <h2>Foods</h2>
+                <p class="Lead">
+                  Taiwanese cuisine is a blend of various regional Chinese cuisines, along with influences from Japanese and indigenous Taiwanese ingredients and flavors. Taiwanese cuisine is known for its bold flavors, creative use of ingredients, and street food culture.
+
+                  Some popular dishes in Taiwan include beef noodle soup, a hearty soup made with slow-cooked beef, noodles, and aromatic spices; stinky tofu, a pungent fermented tofu that is deep-fried and served with chili sauce; oyster omelet, a savory omelet made with fresh oysters, eggs, and vegetables; and xiao long bao, a type of steamed dumpling filled with juicy pork and soup.
+                </p>
+                <p>
+                  Taiwan is also famous for its night markets, where visitors can sample a wide variety of street foods such as grilled squid, fried chicken, bubble tea, and shaved ice desserts.
+
+
+                </p>
+                <a href="/pages/food.html" class="btn btn-dark mt-3 text-warning">
+                    <i class="bi bi-chevron-right"></i> Read More
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="learn" class="pt-lg-5 pb-lg-5 p-5 bg-black text-light">
+    <div class="container pt-lg-5 pb-lg-5 p-5">
+        <div class="pt-lg-5 pb-lg-5 p-5 row align-items-center justify-content-between">
+            <div class="col-md p-5">
+                <h2>Kids & Family</h2>
+                <p class="Lead">
+                  There are plenty of fun and exciting things that kids and families can do in Taiwan. Here are some ideas:
+
+Visit amusement parks: Taiwan has several amusement parks that offer a variety of rides and attractions suitable for all ages, such as Taipei Children's Amusement Park, Leofoo Village Theme Park, and E-DA Theme Park.
+
+
+                </p>
+                <p>
+                  Explore museums: Taiwan has many museums with interactive exhibits and educational programs that are perfect for families, such as the National Museum of Natural Science in Taichung and the National Palace Museum in Taipei.
+
+                  Enjoy nature: Taiwan is home to many beautiful natural landscapes that are perfect for hiking, picnicking, and exploring, such as Taroko National Park and Yangmingshan National Park.
+                </p>
+                <a href="/pages/kidsfamilyactivities.html" class="btn btn-dark mt-3 text-warning">
+                    <i class="bi bi-chevron-right"></i> Read More
+                </a>
+            </div>
+            <div class="col-md">
+                <img src="imgs/kids.jpg" class="img-fluid" alt="kids" width="400px" height="100px">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="learn" class="bg-black pt-lg-5 pb-lg-5 p-5 text-light">
+  <div class="container pt-lg-5 pb-lg-5 p-5">
+      <div class="row align-items-center justify-content-between pt-lg-5 pb-lg-5 p-5">
+          <div class="col-md">
+              <img src="imgs/Taroko.jpg" class="img-fluid" alt="Taroko" width="600px" height="100px">
+          </div>
+          <div class="col-md p-5">
+              <h2>Attractions</h2>
+              <p class="Lead">
+                Taiwan is a vibrant and diverse destination with a wide range of attractions to explore. Here are some popular attractions in Taiwan:
+
+                Taipei 101: A landmark skyscraper and observation tower in Taipei, standing at 508 meters tall.
+                
+                Taroko National Park: A stunning natural wonderland of steep gorges, marble cliffs, and crystal-clear rivers.
+                
+                  
+              </p>
+              <p>
+                Sun Moon Lake: A scenic lake in central Taiwan surrounded by mountains and lush greenery, offering a variety of outdoor activities such as hiking and cycling.
+                
+                Alishan National Scenic Area: A mountainous area in central Taiwan famous for its tea plantations, hiking trails, and scenic railway.
+                
+                Kenting National Park: A popular beach resort area in southern Taiwan, featuring white sand beaches, coral reefs, and a variety of water sports.
+              </p>
+              <a href="/pages/attractions.html" class="btn btn-dark mt-3 text-warning">
+                  <i class="bi bi-chevron-right"></i> Read More
+              </a>
+          </div>
+      </div>
+
+  </div>
+</section>
+
+<section id="learn" class="pt-lg-5 pb-lg-5 p-5 bg-black text-light">
+  <div class="container pt-lg-5 pb-lg-5 p-5">
+      <div class="pt-lg-5 pb-lg-5 p-5 row align-items-center justify-content-between">
+          <div class="col-md p-5">
+              <h2>Shopping</h2>
+              <p class="Lead">
+                Taiwan is a shopping paradise, offering a variety of shopping experiences ranging from high-end luxury malls to vibrant street markets. Here are some popular shopping destinations in Taiwan:
+
+Ximending: A lively pedestrian area in Taipei known for its trendy fashion boutiques, street food, and entertainment.
+
+ 
+              </p>
+              <p>
+                Shilin Night Market: One of the largest and most popular night markets in Taipei, offering a wide range of food, fashion, and souvenirs.
+
+                Taipei 101: A world-class shopping destination located in Taipei's iconic skyscraper, featuring luxury boutiques, international brands, and gourmet dining.
+                
+                Guanghua Digital Plaza: A tech-lover's paradise located in Taipei, offering a huge selection of electronic gadgets and accessories.
+              </p>
+              <a href="/pages/shopping.html" class="btn btn-dark mt-3 text-warning">
+                  <i class="bi bi-chevron-right"></i> Read More
+              </a>
+          </div>
+          <div class="col-md">
+              <img src="imgs/ZS-5.png" class="img-fluid" alt="Zhongshan" width="400px" height="100px">
+          </div>
+      </div>
+
+  </div>
+</section>
+
+<section id="learn" class="bg-black pt-lg-5 pb-lg-5 p-5 text-light">
+  <div class="container pt-lg-5 pb-lg-5 p-5">
+      <div class="row align-items-center justify-content-between pt-lg-5 pb-lg-5 p-5">
+          <div class="col-md">
+              <img src="imgs/mrt-3.jpeg" class="img-fluid" alt="mrt" width="600px" height="100px">
+          </div>
+          <div class="col-md p-5">
+              <h2>Transportation</h2>
+              <p class="Lead">
+                Taiwan has a well-developed transportation system that makes it easy and convenient to get around the country. Here are some of the main modes of transportation in Taiwan:
+
+                MRT: The Mass Rapid Transit system, also known as the Taipei Metro, is a fast and efficient way to travel around Taipei and the surrounding areas. The MRT covers most of the city and is relatively inexpensive.
+                
+               
+              </p>
+              <p>
+                High-Speed Rail (HSR): The Taiwan High-Speed Rail system connects major cities such as Taipei, Taoyuan, Taichung, Tainan, and Kaohsiung. The HSR is clean, comfortable, and fast, making it an excellent option for longer distances.
+                
+                Bus: Taiwan has an extensive bus network that connects cities, towns, and villages across the island. Buses are generally affordable and convenient, with frequent schedules and routes.
+              </p>
+              <a href="/pages/transportations.html" class="btn btn-dark mt-3 text-warning">
+                  <i class="bi bi-chevron-right"></i> Read More
+              </a>
+          </div>
+      </div>
+
+  </div>
+</section>
+
+
+<!-- Question Accordion -->
+<section id="white" class="p-5 bg-dark">
+<div class="container">
+    <h2 class="text-center text-warning fw-bolder">Questions?</h2>
+    <div class="accordion accordion-flush p-5" id="questions">
+        <!-- Item 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed text-black fst-italic fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-one"
+            >
+              Where exactly are you located?
+            </button>
+          </h2>
+          <div
+            id="question-one"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body fst-italic text-decoration-underline ">
+              245 Xinyi Street Taiwan TW 
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed text-black fst-italic fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-two"
+            >
+              How much does one trip cost?
+            </button>
+          </h2>
+          <div
+            id="question-two"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body fst-italic text-decoration-underline">
+              80~200 USD
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed text-black fst-italic fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-three"
+            >
+              What do I need to Know?
+            </button>
+          </h2>
+          <div
+            id="question-three"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body fst-italic text-decoration-underline">
+              You will be provided a hand size tour guide from us.
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed text-black fst-italic fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-four"
+            >
+              How Do I sign up?
+            </button>
+          </h2>
+          <div
+            id="question-four"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body fst-italic text-decoration-underline">
+              Sign up the membership form!
+
+      
+
+              
+            </div>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed text-black fst-italic fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-five"
+            >
+              Can you recommend a tour guide?
+            </button>
+          </h2>
+          <div
+            id="question-five"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body fst-italic text-decoration-underline">
+              Yes! We provide customized experience for each of our customers.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- 
+  <button class="navbar-toggler"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#navmenu">
+  <span class="navbar-toggler-icon"></span>
+
+</button> -->
+
+
+<!-- Instructors -->
+    <section id="instructors" class="bg-black pt-lg-5 pb-lg-5 p-5 ">
+        <div class="container pt-lg-5 pb-lg-5 p-5 ">
+            <h2 class="text-center text-warning fw-bolder">Book Your Tour Guide
+            <!-- <div class="text-center"> -->
+            </h2>
+            <!-- </div> -->
+
+            <p class="lead text-center text-light mb-5">
+                Find the recommended places that locals love!
+            </p>
+<div class="row g-4">
+    <div class="col-md-6 col-lg-3">
+        <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt="men">
+            <h3 class="card-title mb-3">Jack Chen</h3>
+<p class="card-text">
+ <p class="text-left mb-lg-0">Phone: 966-333-5734</p>  
+ <p class="text-left mb-lg-0">Email: 777njlb@gmail.com</p>  
+ <p class="text-left mb-lg-0">Hobbies: working out, backpack traveling</p>  
+</p>
+<a href="https://www.mytaiwantour.com/" class="btn btn-dark text-warning border rounded-left border-lg border-warning">Book Me!<i class="bi bi-arrow-right"></i></a>
+
+
+</div>
+        </div>
+
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3" alt="women">
+                <h3 class="card-title mb-3">Marian Hong</h3>
+                <p class="card-text">
+                 <p class="text-left mb-lg-0">Phone: 520-333-8880-</p>  
+                 <p class="text-left mb-lg-0">Email: 777njlb@gmail.com</p>  
+                 <p class="text-left mb-lg-0">Hobbies: Singing, Mountain Cycling</p>  
+                </p>
+                <a href="https://www.mytaiwantour.com/" class="btn btn-dark text-warning border rounded-left border-lg border-warning">Book Me!<i class="bi bi-arrow-right"></i></a>
+                
+                
+</div>
+        </div>
+
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/men/12.jpg" class="rounded-circle mb-3" alt="men">
+            <h3 class="card-title mb-3">Steve Hsu</h3>
+            <p class="card-text">
+              <p class="text-left mb-lg-0">Phone: 530-545-8880-</p>  
+              <p class="text-left mb-lg-0">Email: hh999b@gmail.com</p>  
+              <p class="text-left mb-lg-0">Hobbies: Skiing, Watching Movies</p>  
+             </p>
+             <a href="https://www.mytaiwantour.com/" class="btn btn-dark text-warning border rounded-left border-lg border-warning">Book Me!<i class="bi bi-arrow-right"></i></a>
+</div>
+        </div>
+    </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="card bg-dark text-light">
+                <div class="card-body text-center">
+                    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3" alt="women">
+                    <h3 class="card-title mb-3">Sean Ho</h3>
+                    <p class="card-text">
+                      <p class="text-left mb-lg-0">Phone: 780-545-8880-</p>  
+                      <p class="text-left mb-lg-0">Email: njhkj@gmail.com</p>  
+                      <p class="text-left mb-lg-0">Hobbies: Snow boarding, Watching Movies</p>  
+                     </p>
+                     <a href="https://www.mytaiwantour.com/" class="btn btn-dark text-warning border rounded-left border-lg border-warning">Book Me!<i class="bi bi-arrow-right"></i></a>
+            </div>
+    
+        </div>
+
+    </div>
+</div>
+        </div>
+    </section>
+    
+<!-- Contact & Map -->
+<section class="bg-dark pt-lg-5 pb-lg-5 p-5 ">
+<div class="container pt-lg-5 pb-lg-5 p-5">
+<div class="row g-4">
+<div class="col-md ">
+<h3 class="text-center mb-4 text-warning fw-bolder">
+Contact Info
+</h3>
+<ul class="list-group list-group-flush lead text-center">
+ <li class="list-group-item bg-dark text-warning">
+        <span class="fw-bold"> Main Location:</span>
+       p 245 Xinyi Street Taiwan TW
+      </li>
+    <li class="list-group-item bg-dark text-warning">
+        <span class="fw-bold">Phone Number:</span>
+        (245)666-7777
+    </li>
+    <li class="list-group-item bg-dark text-warning">
+        <span class="fw-bold">Open Hours:</span>
+        Monday-Friday 10:00AM~5:00PM
+    </li>
+    <li class="list-group-item bg-dark text-warning">
+        <span class="fw-bold">Email:</span>
+        Taiwango@gmail.com
+    </li>
+    
+</ul>
+
+
+</div>
+<div class="col-md">
+    <div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56368890.17234291!2d-158.60815495!3d30.422378100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acf3a595dfaea5%3A0xaf9e777bce996b51!2sTaipei%20101!5e0!3m2!1sen!2sus!4v1677993351421!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+    
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- Card -->
+<section class="cards">
+<div
+  class="pt-lg-5 pb-lg-5 p-5 bg-image card shadow-1-strong rounded-0 border-0"
+  style="background-image: url('imgs/web4.png'); background-size:cover;"
+>
+  <div class="card-body text-dark">
+    <h5 class="card-title fw-bold fst-italic">Trip.com</h5>
+    <p class="card-text fw-bold">
+      Leading online travel agency based in China that provides a one-stop travel booking platform for customers worldwide. 
+    </p>
+    <a href="https://www.trip.com/travel-guide/taiwan-100076/cities/" class="btn btn-dark text-warning">Click</a>
+  </div>
+</div>
+
+<div
+  class="pt-lg-5 pb-lg-5 p-5 bg-image card shadow-1-strong rounded-0 border-0"
+  style="background-image: url('imgs/web1.jpg'); background-size:cover;"
+>
+  <div class="card-body text-dark">
+    <h5 class="card-title fw-bold fst-italic">Taiwan Heart</h5>
+    <p class="card-text fw-bold">
+      Taiwan tour guide website is an official tourism website of Taiwan's tourism bureau in Indonesia. 
+    </p>
+    <a href="https://taiwantourism.id/" class="btn btn-dark text-warning">Click</a>
+  </div>
+</div>
+
+<div
+  class="pt-lg-5 pb-lg-5 p-5 bg-image card shadow-1-strong rounded-0 border-0"
+  style="background-image: url('imgs/web7.png'); background-size:cover;"
+>
+  <div class="card-body text-dark">
+    <h5 class="card-title fw-bold fst-italic">funnow</h5>
+    <p class="card-text fw-bold">
+      Fun Now is a mobile app that offers a variety of on-demand services and experiences in Taiwan, including dining, entertainment.
+    </p>
+    <a href="https://www.myfunnow.com/en?utm_source=google&utm_medium=gs_1&utm_content=TW&gclid=EAIaIQobChMImfjk9Oft_QIVJMqUCR3W_AZHEAAYASAAEgLT4vD_BwE" class="btn btn-dark text-warning">Click</a>
+  </div>
+</div>
+
+<div
+  class="pt-lg-5 pb-lg-5 p-5 bg-image card shadow-1-strong rounded-0 border-0"
+  style="background-image: url('imgs/web5.png'); background-size:cover;"
+>
+  <div class="card-body text-dark">
+    <h5 class="card-title fw-bold fst-italic">TEX Express</h5>
+    <p class="card-text fw-bold">
+      The Taiwan High-Speed Rail Corporation (THSRC) operates the high-speed rail system in Taiwan.
+    </p>
+    <a href="https://en.thsrc.com.tw/ArticleContent/082fe624-b153-43d5-8a17-4be94132633b" class="btn btn-dark">Click</a>
+  </div>
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- Card -->
+
+
+<!-- Newsletter -->
+<section class="bg-black text-light p-5 text-center">
+  <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0 text-warning">Sign Up For Our NewsLetter!</h3>
+          
+          <div class="input-group news-input">
+              <input 
+              type="text" 
+              class="form-control" 
+              placeholder="Enter Email"/>
+            
+                <button 
+                class="btn btn-dark btn-lg text-warning" 
+                type="button"
+                >submit</button>
+              </div>
+            </div>
+        </div>
+  </div>
+</section>  
+
+
+
+<!-- footer -->
+<div class="p-5 footer bg-black pt-lg-5 text-center text-light fw-bold">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4 col-xs-12">
+              <div class="first fw-light text-light">
+                  <h4> Our Mission </h4>
+                  <p> Entertaining</p>
+                  <p> Unique</p>
+                  <p> Creative</p>
+                  <p> Inclusive</p>
+                  <p> Diverse</p>
+                  <p> Motivating</p>
+              </div>
+          </div>
+
+          <div class="col-md-4 col-xs-12 text-center text-light fw-bold">
+              <div class="second">
+                <ul>
+                  <h4> Navigate </h4>
+                      <p><a href="index.html" class="link-warning fw-light text-light">Home</a></p>
+                      <p><a href="pages/attractions.html" class="link-warning fw-light text-light">Attractions</a></p>
+                      <p><a href="pages/food.html" class="link-warning fw-light text-light">Food</a></p>
+                      <p><a href="pages/kidsfamilyactivities.html" class="link-warning fw-light text-light">Kids and Families</a></p>
+                      <p><a href="pages/shopping.html" class="link-warning fw-light text-light">Shopping</a></p>
+                      <p><a href="pages/transportations.html" class="link-warning fw-light text-light">Transportations</a></p>
+
+                  </ul>
+              </div>
+          </div>
+
+          <div class="col-md-4 col-xs-12 text-center text-light fw-bold font- ">
+              <div class="third fw-light text-light">
+                <ul>
+                  <h4>Contact</h4>
+                    <p>Sam Wang</p>
+                    <p><i class="far fa-envelope "></i> Sam07779@gmail.com</p>
+                    <p><i class="far fa-envelope "></i> 333-4535-8882</p>
+                    <p><i class="far fa-map-marker-alt "></i> Taipei, TW</p>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+  <!-- Footer -->
+      
+  <footer class="bg-black text-white text-center position-relative">
+    <div class="container">
+    <p class="lead mt-lg-5 mb-lg-5">Copyright &copy; 2023 Taiwan Go Tour Guide</p>
+    
+    <a href="#" class="container-fluid">
+        <i class="bi bi-arrow-up-circle " style="font-size: 2rem; color: gold;"></i>
+    </a>
+    
+    
+    </div>
+    </footer>
+
+
+<!-- Modal -->
+<div class="modal fade" 
+id="enroll" 
+tabindex="-1" 
+aria-labelledby="enrollLabel" 
+aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content text-black">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" 
+          id="enrollLabel">Join Our Membership program today!</h1>
+          <button type="button" 
+          class="btn-close" 
+          data-bs-dismiss="modal" 
+          aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p class="lead">Fill out this form and we will get back to you!</p>
+            <form>
+                <div class="mb-3 text-left">
+                    <label for="first-name" class="col-form-label ">
+                        First Name:
+                    </label>
+                    <input type="text" class="form-control" id="first-name">
+                </div>
+                <div class="mb-3">
+                    <label for="first-name" class="col-form-label">
+                        Last Name:
+                    </label>
+                    <input type="text" class="form-control" id="last-name">
+                </div>
+                <div class="mb-3">
+                    <label for="first-name" class="col-form-label">
+                        Email:
+                    </label>
+                    <input type="text" class="form-control" id="Email">
+                </div>
+                <div class="mb-3">
+                    <label for="first-name" class="col-form-label">
+                        Phone Number:
+                    </label>
+                    <input type="text" class="form-control" id="phone-number">
+                </div>
+            </form>
+        
+        </div>
+        <div class="modal-footer">
+          <button 
+          type="button" 
+          class="btn btn-dark" 
+          data-bs-dismiss="modal">
+          Close
+        </button>
+          <button type="button" class="btn btn-warning">Submit</button>
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
